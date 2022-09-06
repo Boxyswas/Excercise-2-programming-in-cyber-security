@@ -1,0 +1,57 @@
+Toyota = ['Camry', 'Sienna', 'Forerunner', 'Tacoma', 'Supra']
+Toyota.append('Tundra')
+Colors = ['Red', 'Blue', 'Silver', 'Grey', 'White']
+Colors[4] = 'Black'
+Model = 2022
+Camry = 24660
+Sienna = 36300
+Forerunner = 38805
+Tacoma = 27150
+Supra = 43500
+yr_4 = 48
+yr_5 = 60
+yr_6 = 72
+guest = 'Bob'
+welcome_message = f'Hello {guest}, welcome to Ryan\'s Toyota dealership! What kind of vehicle are you looking for today?'
+banner = '                    Ryan\'s Toyota Dealership \nGet the latest Toyota name brand vehicle\'s and the best prices!'
+print(f'{banner}\n\n{welcome_message}\n')
+Toyota.sort()
+Colors.sort()
+print('We currently have 6 models for sale: \n')
+for car in Toyota:
+    # Ask how to make the Colors list not look like a list, maybe need another for statement if possible
+    print(f'The {car} is available in the new {Model} model and we colors ranging from {Colors} ')
+monthly_payment4 = (Camry / yr_4)
+monthly_payment5 = (Camry / yr_5)
+monthly_payment6 = (Camry / yr_6)
+monthly5Camry = (Camry/yr_5)
+monthly5Sienna = (Sienna/yr_5)
+monthly5Forerunner = (Forerunner/yr_5)
+monthly5Tacoma = (Tacoma/yr_5)
+monthly5Supra = (Supra/yr_5)
+print('\nWe have many different 4 year, 5 year, and 6 year plans for all of our cars as well!\n')
+print(f'For example, a brand new 2022 Camry on a 5 year plan would cost you only ${monthly_payment5} a month for 5 years.')
+
+print('If the 5 year plan doesn\'t fit you plan, there\'s also the 4 and 6 year plans as well!\n')
+print(f'A 4 year plan would go for ${monthly_payment4} a month and a 6 year plan would go for ${monthly_payment6} a month.')
+
+print(f'It seems you like the 5 year plan. It\'s a great and affordable choice!')
+print('Here is a list of all of our current models on the 5 year plan\n')
+# Ask if there is a way to make all of the equations into one equation
+print(f'A 2022 Camry would cost you ${monthly5Camry} a month')
+print(f'A 2022 Sienna would cost you ${monthly5Sienna} a month')
+print(f'A 2022 Forerunner would could you ${monthly5Forerunner} a month')
+print(f'A 2022 Tacoma would cost you ${monthly5Tacoma} a month')
+print(f'A 2022 Supra would cost you ${monthly5Supra} a month\n')
+
+print('Feel free to look around at the different choices and let me know if you have any questions!\n')
+#import math wont work
+used_car_millage = ['10000<', '10000+', '20000+', '30000+', '40000+', '50000+']
+print(f'Also, if your looking for an older, more used vehicle, we have {Toyota} \navailable in {used_car_millage} miles at lower prices.')
+payment=['Check','Credit','Cash','Debit']
+print('\nAlong with the different plans we have, we also have many different methods of payment')
+print(f'You can pay with {payment}')
+ratings=['1 star', '2 star', '3 star', '4 star', '5 star']
+print('\nHow would you rate your service here today? Please choose from the selections below:')
+for star in ratings:
+    print(f'{star}')
